@@ -1,14 +1,20 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
-const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
 
+// Функція для динамічного імпорту
+async function loadAutoprefixer() {
+    const module = await import('gulp-autoprefixer');
+    return module.default;
+}
+
 // Компіліруємо SCSS → CSS
-gulp.task('styles', function () {
+gulp.task('styles', async function () {
+    const autoprefixer = await loadAutoprefixer();
+
     return gulp.src('src/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({ cascade: false }))
@@ -26,8 +32,10 @@ gulp.task('scripts', function () {
         .pipe(browserSync.stream());
 });
 
-// Оптимізація зображень
-gulp.task('images', function () {
+// Оптимізація зображень (додаємо динамічний імпорт)
+gulp.task('images', async function () {
+    const imagemin = (await import('gulp-imagemin')).default;
+
     return gulp.src('src/images/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'));
@@ -47,3 +55,4 @@ gulp.task('serve', function () {
 
 // Завдання за замовчуванням
 gulp.task('default', gulp.series('styles', 'scripts', 'images', 'serve'));
+
