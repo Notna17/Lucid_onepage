@@ -54,5 +54,5 @@ gulp.task('serve', function () {
 });
 
 // Завдання за замовчуванням
-gulp.task('default', gulp.series('styles', 'scripts', 'images', 'serve'));
+gulp.task('default', gulp.series('styles', 'scripts', 'serve'));
 
