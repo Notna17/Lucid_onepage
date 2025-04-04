@@ -1,0 +1,93 @@
+// Загальні стилі
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container {
+    max-width: 1170px;
+}
+a {
+    text-decoration: none;
+    color: inherit
+}
+a:hover {
+    text-decoration: none;
+    color: inherit
+}
+// Header
+.headerbg {
+    background: no-repeat center;
+    background-size: cover;
+    background-image: url('/dist/images/\ bg.png');
+    height: 640px;
+}
+.header {
+    height: 96px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+}
+.logo-main {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+.logo-sub {
+    font-size: 9px;
+    color: #fff;
+    margin-left: 10px;
+    opacity: 0.5;
+    line-height: 10px;
+}
+.header-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    height: 96px;
+    align-items: center;
+  
+    li {
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .double-dash {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 20px;
+      height: 2px;
+      background: #008ed6;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &::before {
+      left: calc(50% - 11px); // Зміщення вліво
+    }
+    &::after {
+      left: calc(50% + 11px); // Зміщення вправо
+    }
+
+    &:hover::before,
+    &:hover::after {
+      opacity: 1;
+    }
+  } 
