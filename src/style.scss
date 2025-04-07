@@ -1,7 +1,4 @@
 // Загальні стилі
-$primary: #008ed6;
-$secondary: #4d4d52;
-
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -15,6 +12,10 @@ a {
 a:hover {
     text-decoration: none;
     color: inherit
+}
+.text-primary {
+    font-weight: bold;
+    font-size: 14px;
 }
 // Header
 .headerbg {
@@ -132,4 +133,38 @@ a:hover {
     color: #cccccc;
     font-weight: bold;
     font-size: 14px;
+}
+// features
+.featuresbg {
+  color: white;
+  padding-top: 64px;
+}
+.centered {
+  margin: auto;
+}
+.double-dash-active {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background: #008ed6;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  &::before {
+    left: calc(50% - 11px); // Зміщення вліво
+  }
+  &::after {
+    left: calc(50% + 11px); // Зміщення вправо
+  }
 }
