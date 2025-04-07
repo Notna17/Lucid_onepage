@@ -1,4 +1,7 @@
 // Загальні стилі
+$primary: #008ed6;
+$secondary: #4d4d52;
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -60,7 +63,7 @@ a:hover {
       align-items: center;
     }
   }
-  .double-dash {
+.double-dash {
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
@@ -91,3 +94,42 @@ a:hover {
       opacity: 1;
     }
   } 
+.home {
+  height: 544px;
+}
+.two-devices {
+  background: no-repeat center;
+  background-size: cover;
+  background-image: url('/dist/images/two-devices.png');
+  height: 100%;
+}
+.home-button {
+  width: 160px;
+  height: 50px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.contact-form {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 326px;
+    height: 428px;
+    background: white;
+    padding: 25px;
+    z-index: 999;
+    display: none;
+    &.on {
+      display: block;
+    }
+}
+.contact-input {
+  margin-bottom: 20px;
+}
+.contact-input::placeholder {
+    color: #cccccc;
+    font-weight: bold;
+    font-size: 14px;
+}

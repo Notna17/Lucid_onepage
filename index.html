@@ -13,23 +13,48 @@
     <div class="headerbg">
         <div class="container">
         <div class="row header" id="home">
-            <div class="col-md-2 col-sm-3 header">
+            <div class="d-none d-md-block col-sm-2 header">
                 <div class="logo">
                 <div class="logo-main"><a href="#home">LUCID</a></div>
                 <div class="logo-sub">ONEPAGE</br>THEME</div>
                 </div>
             </div>
-            <div class="col-md-5 col-sm-0 header"></div>
-            <div class="col-md-5 col-sm-9 header">
+            <div class="d-none d-md-block col-md-5"></div>
+            <div class="col-md-5 col-xs-10 header">
                     <ul class="header-menu">
                         <li><a href="#home" class="double-dash">Home</a></li>
                         <li><a href="#features" class="double-dash">Features</a></li>
                         <li><a href="#about" class="double-dash">About</a></li>
                         <li><a href="#services" class="double-dash">Services</a></li>
                         <li><a href="#pricing" class="double-dash">Pricing</a></li>
-                        <li><a href="#contact" class="double-dash">Contact</a></li>
+                        <li class="double-dash" id="contact">Contact</li>
                     </ul>
             </div>
+        </div>
+        <div class="row home" style="position:relative">
+            <div class="col-md-6 col-sm-10 col-xs-12 home">
+                <div style="padding-top: 65px;padding-bottom: 65px;">
+                  <div class="text-primary" style="font-weight: bold;font-size: 14px; margin-bottom: 20px;">INTRODUCING LUCID THEME</div>
+                  <div class="text-white" style="font-size: 48px;font-weight: 600; line-height: 50px; margin-bottom: 20px;">Carefully crafted and beautiful landing page.</div>
+                  <div class="text-secondary" style="font-size: 18px; margin-bottom: 50px">Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus mi, at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor placerat tempus. Morbi blandit at neque ut imperdiet.</div>
+                  <div class="display: flex;">
+                    <button class="btn btn-primary home-button">DOWNLOAD NOW</button>
+                    <button class="btn btn-outline-light home-button" style="border-color: #4d4d52;">VIEW FEATURES</button>
+                  </div>
+                </div>
+            </div>
+            <div class="d-none d-sm-block col-md-6 col-sm-2 home">
+                <img src="dist/images/two_devices.png" alt="two phones" class="two-devices">
+            </div>
+            <form class="contact-form" id="contact-form" onsubmit="contactFormCheck()">
+            <p style="color:#000; font-size: 24px; margin: 0;">Get in touch</p>
+            <p style="font-size: 14px;color: rgb(153, 153, 153)">Please complete the form.</p>
+            <input type="text" class="form-control contact-input" id="contact-name" placeholder="NAME *" required>
+            <input type="email" class="form-control contact-input" id="contact-email" placeholder="EMAIL *" required>
+            <input type="text" class="form-control contact-input" id="contact-subject" placeholder="SUBJECT *" required>
+            <textarea class="form-control contact-input" id="contact-message" placeholder="MESSAGE *" style="height: 70px; resize:none" required></textarea>
+            <button type="submit" class="btn btn-primary home-button" id="contact-send">SEND MESSAGE</button>
+            </form>
         </div>
         </div>
     </div>

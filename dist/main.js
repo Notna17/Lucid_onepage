@@ -1,0 +1,1 @@
+let contact=document.getElementById("contact"),contactForm=document.getElementById("contact-form"),contactFormCheck=(contact.addEventListener("click",function(){contactForm.classList.toggle("on")}),()=>{contactForm.checkValidity()&&contactForm.classList.toggle("on")});
