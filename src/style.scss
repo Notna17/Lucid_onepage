@@ -168,3 +168,27 @@ a:hover {
     left: calc(50% + 11px); // Зміщення вправо
   }
 }
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+}
+.element-circle {
+  width: 90px; 
+  height: 90px;
+  border: 1px solid #e4e4e4;
+  border-radius: 50%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.divider {
+  height: 1px;
+  background-color: #ededed;
+  width: 100%;
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
