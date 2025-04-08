@@ -9,3 +9,18 @@ const contactFormCheck = () => {
     let valid = contactForm.checkValidity();
     if (valid) contactForm.classList.toggle("on");
 }
+//details
+const changeEvenDetails = () => {
+  let i = 2;
+  let row = null;
+  let container = null;
+  while (true) {
+    container = document.getElementById("details-bg-" + i.toString());
+    row = document.getElementById("details-row-" + i.toString());
+    if (container === null || row === null) break;
+    container.classList.toggle("even");
+    row.classList.add("reversed");
+    i += 2;
+  }
+}
+changeEvenDetails();
