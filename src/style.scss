@@ -1,6 +1,7 @@
 // Загальні стилі
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
 }
 .container {
     max-width: 1170px;
@@ -282,5 +283,10 @@ a:hover {
   height: 14px;
   background: #fff;
   margin-bottom: 6px !important;
+}
+// Like what you see
+.lwysbg {
+  background-color: #15141a;
+  height: 170px;
 }
 
