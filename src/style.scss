@@ -240,3 +240,47 @@ a:hover {
     }
   }
 }
+//slider
+.sliderbg {
+  background: no-repeat center;
+  background-size: cover;
+  background-image: url('/dist/images/\ bg2\ Prostokąt\ 4.png');
+  height: 640px;
+  padding-top: 64px;
+}
+.quote {
+  height: 100%;
+  margin-top: 80px;
+  padding: 10px;
+}
+.quote-text {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.quote-picture {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  background: transparent;
+  opacity: 0.5;
+  margin: 6px !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin-bottom: 9px !important;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  margin-bottom: 6px !important;
+}
+

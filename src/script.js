@@ -24,3 +24,22 @@ const changeEvenDetails = () => {
   }
 }
 changeEvenDetails();
+//swiper
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    }
+  }
+});
