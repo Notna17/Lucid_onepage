@@ -17,6 +17,15 @@ a:hover {
     font-weight: bold;
     font-size: 14px;
 }
+.text-secondary {
+    font-size: 18px;
+    color: #999;
+}
+.black-text {
+  font-weight: 600;
+  font-size: 36px;
+  color: #000;
+}
 // Header
 .headerbg {
     background: no-repeat center;
@@ -191,4 +200,43 @@ a:hover {
   width: 100%;
   margin-top: 54px;
   margin-bottom: 54px;
+}
+// dip into details
+.dip-into-detail {
+  background-color: white;
+  &.even {
+    background-color: #f2f2f2;
+  }
+}
+.reversed {
+  flex-direction: row-reverse;
+}
+.pictogram {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #1b1b1b;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      flex-shrink: 0;
+      object-fit: contain;
+    }
+  }
 }
