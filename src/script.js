@@ -1,11 +1,13 @@
-const axios = require('axios');
 //contact
+
 const contact = document.getElementById("contact");
 const contactForm = document.getElementById("contact-form");
-contact.addEventListener("click", function () {
-  contactForm.classList.toggle("on");
+if (contact && contactForm) {
+    contact.addEventListener("click", function () {
+      contactForm.classList.toggle("on");
+    });
+  }
 
-});
 const contactFormCheck = () => {
     let valid = contactForm.checkValidity();
     if (valid) contactForm.classList.toggle("on");
@@ -94,4 +96,13 @@ function initMap() {
     position: center,
     map: map,
   });
+}
+
+// pool
+const poolForm = document.getElementById("pool-form");
+const poolButton = document.getElementById("pool-send");
+const poolFormCheck = () => {
+  let valid = poolForm.checkValidity();
+  if (valid) {poolButton.textContent = "MESSAGE SENT";
+  }
 }

@@ -246,11 +246,16 @@
           </div>
         </div>
       </div>
-      <div class="row"><div class="col-2-lg col-xs-1"></div>
-      <div class="col-8-lg col-xs-10">
-        
-      </div>
-      <div class="col-2-lg col-xs-1"></div>
+      <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12"><form class="pool-form" id="pool-form" onsubmit="poolFormCheck()"><div class="row mb-md-0 mb-4">
+            <div class="col-md-6 col-xs-12">
+            <input type="text" class="form-control pool-input" id="pool-name" placeholder="NAME *" required>
+            <input type="email" class="form-control pool-input" id="pool-email" placeholder="EMAIL *" required>
+            <input type="text" class="form-control pool-input" id="pool-subject" placeholder="SUBJECT *" required></div>
+            <div class="col-md-6 col-xs-12">
+            <textarea class="form-control pool-input" id="pool-message" placeholder="MESSAGE *" style="max-height: 190px; height: 100%; resize:none; padding: 15px;" required></textarea></div></div>
+            <div style="display:flex; justify-content: right; align-items: center;"><button type="submit" class="btn btn-primary home-button" id="pool-send" style="margin-right: 0 !important;">SEND MESSAGE</button>
+      </form></div>
     </div></div></div>
     <div id="map"></div>
 
