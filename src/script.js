@@ -43,3 +43,26 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+//price
+const priceCheck = (x) => {
+  const card = document.getElementById("price" + x.toString());
+  const title = document.getElementById("priceT" + x.toString());
+  const info = document.getElementById("priceI" + x.toString());
+  const infoMain = document.getElementById("priceImain" + x.toString());
+  const infoSub = document.getElementById("priceIsub" + x.toString());
+  card.addEventListener("mouseenter", function () {
+    title.classList.add("h");
+    info.classList.add("h");
+    infoMain.classList.add("h");
+    infoSub.classList.add("h");
+  });
+  card.addEventListener("mouseleave", function () {
+    title.classList.remove("h");
+    info.classList.remove("h");
+    infoMain.classList.remove("h");
+    infoSub.classList.remove("h");
+  });
+}
+for (let i = 1; i <= 4; i++) {
+  priceCheck(i);
+}

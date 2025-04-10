@@ -296,17 +296,23 @@ a:hover {
   flex-direction: column;
   border: 1px solid #e4e4e4;
   border-radius: 1px;
+  max-width: 270px;
+  margin-bottom: 10px;
 }
 .price-title {
   display: flex;
   font-size: 24px;
   font-weight: bold;
   color: #1a1a1a;
-  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
   height: 70px;
   width: 100%;
   align-items: center;
   justify-content: center;
+  transition: 0.3s ease-in-out;
+  &.h {
+    color: #008ed6;
+  }
 }
 .price-info {
   display: flex;
@@ -316,8 +322,52 @@ a:hover {
   height: 150px;
   width: 100%;
   background-color: #fff;
-  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  transition: 0.3s ease-in-out;
+  &.h {
+    background-color: #008ed6;
+  }
 }
 .price-info-title {
-  color:#000; font-weight: 600;font-size: 60px;
+  color:#000;
+  font-weight: 600;
+  font-size: 60px;
+  margin-bottom: -20px;
+  transition: 0.3s ease-in-out;
+  &.h {
+    color: #fff;
+  }
+}
+.price-info-sub {
+  font-size: 18px;
+  color: #999999;
+  transition: 0.3s ease-in-out;
+  &.h {
+    color: #fff;
+  }
+}
+.price-last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 270px;
+  width: 100%;
+  background-color: #fff;
+}
+.price-button {
+  width: 160px;
+  height: 50px;
+  color: #008ed6;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #e4e4e4;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: #008ed6;
+    color: white;
+  }
 }
