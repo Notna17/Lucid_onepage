@@ -25,7 +25,7 @@
                     <ul class="header-menu">
                         <li><a href="#home" class="double-dash">Home</a></li>
                         <li><a href="#features" class="double-dash">Features</a></li>
-                        <li><a href="#about" class="double-dash">About</a></li>
+                        <li><a href="#details-bg-1" class="double-dash">About</a></li>
                         <li><a href="#services" class="double-dash">Services</a></li>
                         <li><a href="#pricing" class="double-dash">Pricing</a></li>
                         <li class="double-dash" id="contact">Contact</li>
@@ -40,7 +40,7 @@
                   <div class="text-secondary" style="font-size: 18px; margin-bottom: 50px">Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus mi, at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor placerat tempus. Morbi blandit at neque ut imperdiet.</div>
                   <div class="display: flex;">
                     <button class="btn btn-primary home-button">DOWNLOAD NOW</button>
-                    <button class="btn btn-outline-light home-button" style="border-color: #4d4d52;" href="#features">VIEW FEATURES</button>
+                    <a href="#features"><button class="btn btn-outline-light home-button" style="border-color: #4d4d52;" href="#features">VIEW FEATURES</button></a>
                   </div>
                 </div>
             </div>
@@ -162,12 +162,12 @@
     <div class="black-text" style="color:#fff">Like what you see? <span style="font-weight: 100;opacity: 0.5;">Get this great theme now!</span></div>
     </div></div>
     <div class="col-lg-4 col-md-6 col-sm-12"><div style="display: flex; justify-content: right; align-items:center; height: 170px;">
-      <button class="btn btn-outline-light home-button" style="border-color: #4d4d52;" href="#features">VIEW FEATURES</button>
+      <a href="#features"><button class="btn btn-outline-light home-button" style="border-color: #4d4d52;">VIEW FEATURES</button></a>
       <button class="btn btn-primary home-button">DOWNLOAD NOW</button>
     </div></div>
     </div></div></div>
 
-    <div class="featuresbg"><div class="container">
+    <div class="featuresbg" id="pricing"><div class="container">
       <div class="row"><div class="text-primary centered">QUALITY HAS ITS PRICE</div></div>
       <div class="row"><div class="centered black-text">Pricing & Plans</div></div>
       <div class="row"><div class="centered double-dash-active" style="margin-top: 20px; margin-bottom: 20px;"></div></div>
@@ -176,8 +176,8 @@
           <div class="price centered" id="price1">
             <div class="price-title" id="priceT1">FREE</div>
             <div class="price-info" id="priceI1"><div class="price-info-title" id="priceImain1"><span style="font-size: 30px;vertical-align: super;">$</span>0</div><div class="price-info-sub" id="priceIsub1">/per month</div></div>
-            <div class="text-secondary price-last"><div style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
-          <button class="price-button" >ORDER NOW</button>
+            <div class="text-secondary price-last"><div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
+          <button class="price-button" id="priceB1">ORDER NOW</button>
           </div>
           </div>
         </div>
@@ -189,8 +189,8 @@
               <div class="price-info-sub" id="priceIsub2">/per month</div>
             </div>
             <div class="text-secondary price-last">
-              <div style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
-              <button class="price-button">ORDER NOW</button>
+              <div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
+              <button class="price-button" id="priceB2">ORDER NOW</button>
             </div>
           </div>
         </div>
@@ -202,8 +202,8 @@
               <div class="price-info-sub" id="priceIsub3">/per month</div>
             </div>
             <div class="text-secondary price-last">
-              <div style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
-              <button class="price-button">ORDER NOW</button>
+              <div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
+              <button class="price-button" id="priceB3">ORDER NOW</button>
             </div>
           </div>
         </div>
@@ -215,12 +215,41 @@
               <div class="price-info-sub" id="priceIsub4">/per month</div>
             </div>
             <div class="text-secondary price-last">
-              <div style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
-              <button class="price-button">ORDER NOW</button>
+              <div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
+              <button class="price-button" id="priceB4">ORDER NOW</button>
             </div>
           </div>
         </div>
     </div></div></div>
+
+    <div class="contactbg"><div class="container">
+      <div class="row"><div class="text-primary centered">STAY IN TOUCH</div></div>
+      <div class="row"><div class="centered black-text">Contact us</div></div>
+      <div class="row"><div class="centered double-dash-active" style="margin-top: 20px;"></div></div>
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="text-center element">
+            <div class="element-without-circle"><img src="dist/images/ Phone.png" alt="Pictogram of phone"></div>
+            <div class="text-secondary">Phone: (415) 124-5678<br>Fax: (412) 123-8290</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="text-center element">
+            <div class="element-without-circle"><img src="dist/images/ Pointer.png" alt="Pictogram of pointer"></div>
+            <div class="text-secondary" id="address">вул Кафедральна, 1A, Луцьк, Волинська область, 43000</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="text-center element">
+            <div class="element-without-circle"><img src="dist/images/ Envelope.png" alt="Pictogram of envelope"></div>
+            <div class="text-secondary"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=suupport@ourname.com&su=Підтримка&body=Що вас турбує?">support@ourname.com</a></div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKsZpp01NHRWm-idLPAlsbpjkdABq5k5E&callback=initMap" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
