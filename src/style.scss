@@ -31,6 +31,7 @@ a:hover {
 .text-secondary {
     font-size: 18px;
     color: #999;
+    line-height: 26px;
 }
 .black-text {
   font-weight: 600;
@@ -216,21 +217,19 @@ a:hover {
   background-color: transparent;
 }
 .element-description {
-  line-height: 26px;
-  width: 250px;
+  max-width: 250px;
   margin-top: 8px;
 }
 .divider {
   height: 1px;
   background-color: #ededed;
   width: 100%;
-  margin-bottom: 66px;
+  margin-bottom: 65px;
   margin-top: 5px;
 }
 // dip into details
 .dip-into-detail {
   background-color: white;
-  margin-bottom: 19px;
   &.even {
     background-color: #f2f2f2;
   }
@@ -247,21 +246,22 @@ a:hover {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 35px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0px;
 
   li {
     display: flex;
     align-items: center;
     font-size: 18px;
+    line-height: 36px;
     color: #1b1b1b;
 
     img {
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
+      width: 18px;
+      height: 18px;
+      margin-right: 7px;
       flex-shrink: 0;
       object-fit: contain;
     }
@@ -273,7 +273,7 @@ a:hover {
   background-size: cover;
   background-image: url('/dist/images/\ bg2\ Prostokąt\ 4.png');
   height: 640px;
-  padding-top: 64px;
+  padding-top: 45px;
 }
 .quote {
   height: 100%;
@@ -283,14 +283,13 @@ a:hover {
 .quote-text {
   font-size: 24px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-style: italic;
 }
 .quote-picture {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  margin-right: 20px;
 }
 .swiper-pagination-bullet {
   width: 8px;
@@ -422,7 +421,7 @@ a:hover {
   padding: 60px;
   padding-bottom: 40px;
   position: relative;
-  z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+  z-index: 999999;
 }
 .pool-input {
 margin-bottom: 20px;
