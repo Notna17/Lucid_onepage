@@ -1,9 +1,24 @@
+//menu
+const icon = document.getElementById("menu-icon");
+const menu = document.getElementById("main-menu");
+const originMenuClass = menu.className;
+let isCollapse = false;
+const toggleMenu = () => {
+  if (isCollapse) {menu.className = originMenuClass} else {menu.className = "collapse-menu"}
+ isCollapse = !isCollapse
+};
+icon.addEventListener("click", toggleMenu)
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    menu.className = originMenuClass;
+    isCollapse = false;
+  }});
 //contact
 
 const contact = document.getElementById("contact");
 const contactForm = document.getElementById("contact-form");
 if (contact && contactForm) {
-    contact.addEventListener("click", function () {
+    contact.addEventListener("click", () => {
       contactForm.classList.toggle("on");
     });
   }
