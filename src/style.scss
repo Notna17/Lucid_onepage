@@ -127,10 +127,13 @@ a:hover {
   height: 540px;
 }
 .two-devices {
-  background: no-repeat center;
-  background-size: cover;
-  background-image: url('/dist/images/two-devices.png');
-  height: 100%;
+  height: 96%;
+  object-fit: contain;
+  position: absolute;
+  overflow: hidden;
+  bottom:  0;
+  right: 0;
+  z-index: 1;
 }
 .home-button {
   width: 160px;
@@ -326,10 +329,10 @@ a:hover {
 }
 //  price
 .price {
-  height: 492px;
+  height: 490px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #e4e4e4;
+  outline: 1px solid #e4e4e4;
   border-radius: 1px;
   max-width: 270px;
   margin-bottom: 10px;
@@ -345,6 +348,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   transition: 0.3s ease-in-out;
+  padding-top: 5px;
   &.h {
     color: #008ed6;
   }
@@ -359,15 +363,17 @@ a:hover {
   background-color: #fff;
   border-bottom: 1px solid #e4e4e4;
   transition: 0.3s ease-in-out;
+  padding-bottom: 10px;
   &.h {
     background-color: #008ed6;
   }
 }
 .price-info-title {
-  color:#000;
+  color:#1a1a1a;
   font-weight: 600;
   font-size: 60px;
-  margin-bottom: -20px;
+  margin-bottom: -18px;
+  padding-right: 7px;
   transition: 0.3s ease-in-out;
   &.h {
     color: #fff;
@@ -399,7 +405,7 @@ a:hover {
   background-color: transparent;
   border-radius: 5px;
   border: 1px solid #e4e4e4;
-  margin-top: 10px;
+  margin-top: 20px;
   transition: 0.3s ease-in-out;
   &.h {
     background-color: #008ed6;
@@ -408,8 +414,8 @@ a:hover {
 }
 //contact
 .contactbg {
-    background-color: #f2f2f2;
-    padding-top: 64px;
+    background-color: #ededed;
+    padding-top: 42px;
 }
 .element-without-circle {
   width: 90px; 
@@ -423,7 +429,7 @@ a:hover {
   width: 100%;
   height: 370px;
   z-index: 1 !important;
-  margin-top: -65px;
+  margin-top: -64px;
 }
 
 .pool-form {
@@ -434,11 +440,19 @@ a:hover {
   z-index: 999999;
 }
 .pool-input {
+  max-width: 300px;
 margin-bottom: 20px;
 background-color: #15141a;
 border-color: #444348;
 height: 50px;
+padding: 15px;
 }
+@media (max-width: 575px) {
+  #pool-leftcolumn {
+    padding-left: 0px !important;
+  }
+}
+
 .pool-input::placeholder {
   color: #444348;
   font-weight: bold;
@@ -470,4 +484,5 @@ height: 50px;
   font-size: 14px;
   color: #444348;
   text-align: center;
+  font-weight: 600;
 }

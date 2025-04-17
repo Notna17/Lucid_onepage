@@ -24,7 +24,7 @@
             </div>
             <div class="d-none d-md-block col-md-5"></div>
             <div class="col-md-5 col-xs-10 header">
-                    <ul class="header-menu">
+                    <ul id="burger-menu" class="header-menu">
                         <li><a href="#home" class="double-dash">Home</a></li>
                         <li><a href="#features" class="double-dash">Features</a></li>
                         <li><a href="#details-bg-1" class="double-dash">About</a></li>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="row home" style="position:relative">
-            <div class="col-md-6 col-sm-10 col-xs-12 home">
+            <div class="col-md-7 col-sm-10 col-xs-12 home" style="z-index: 2;">
                 <div style="display: flex; flex-direction: column; padding-top: 43px; max-width: 479px;">
                   <div class="text-primaryy" style="margin-bottom: 4px;">INTRODUCING LUCID THEME</div>
                   <div class="text-white" style="font-size: 48px;font-weight: 600; line-height: 50px;margin-bottom: 20px;">Carefully crafted and beautiful landing page.</div>
@@ -46,7 +46,7 @@
                   </div>
                 </div>
             </div>
-            <div class="d-none d-sm-block col-md-6 col-sm-2 home">
+            <div class="d-none d-sm-block col-sm-2 col-md-5 home">
                 <img src="dist/images/two_devices.png" alt="two phones" class="two-devices">
             </div>
             <form class="contact-form" id="contact-form" onsubmit="contactFormCheck()">
@@ -178,16 +178,16 @@
     </div></div>
     </div></div></div>
 
-    <div class="featuresbg" id="pricing"><div class="container">
-      <div class="row"><div class="text-primaryy centered">QUALITY HAS ITS PRICE</div></div>
-      <div class="row"><div class="centered black-text">Pricing & Plans</div></div>
-      <div class="row"><div class="centered double-dash-active" style="margin-top: 20px; margin-bottom: 20px;"></div></div>
+    <div class="featuresbg" id="pricing" style="padding-bottom: 51px;"><div class="container">
+      <div class="row"><div class="text-primaryy centered" style="margin-top: -2px;">QUALITY HAS ITS PRICE</div></div>
+      <div class="row"><div class="centered black-text" style="margin-top: -10px;">Pricings & Plans</div></div>
+      <div class="row"><div class="centered double-dash-active" style="margin-top: 13px; margin-bottom: 71px;"></div></div>
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-lg-3">
           <div class="price centered" id="price1">
             <div class="price-title" id="priceT1">FREE</div>
-            <div class="price-info" id="priceI1"><div class="price-info-title" id="priceImain1"><span style="font-size: 30px;vertical-align: super;">$</span>0</div><div class="price-info-sub" id="priceIsub1">/per month</div></div>
-            <div class="text-secondary price-last"><div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
+            <div class="price-info" id="priceI1"><div class="price-info-title" id="priceImain1"><span style="font-size: 30px;vertical-align:18px;">$</span>0</div><div class="price-info-sub" id="priceIsub1">/per month</div></div>
+            <div class="text-secondary price-last"><div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra.</br> Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
           <button class="price-button" id="priceB1">ORDER NOW</button>
           </div>
           </div>
@@ -196,11 +196,11 @@
           <div class="price centered" id="price2">
             <div class="price-title" id="priceT2">PERSONAL</div>
             <div class="price-info" id="priceI2">
-              <div class="price-info-title" id="priceImain2"><span style="font-size: 30px;vertical-align: super;">$</span>25</div>
+              <div class="price-info-title" id="priceImain2"><span style="font-size: 30px;vertical-align:18px;">$</span>25</div>
               <div class="price-info-sub" id="priceIsub2">/per month</div>
             </div>
             <div class="text-secondary price-last">
-              <div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
+              <div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra.</br> Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
               <button class="price-button" id="priceB2">ORDER NOW</button>
             </div>
           </div>
@@ -209,11 +209,11 @@
           <div class="price centered" id="price3">
             <div class="price-title" id="priceT3">BUSINESS</div>
             <div class="price-info" id="priceI3">
-              <div class="price-info-title" id="priceImain3"><span style="font-size: 30px;vertical-align: super;">$</span>50</div>
+              <div class="price-info-title" id="priceImain3"><span style="font-size: 30px;vertical-align:18px;">$</span>50</div>
               <div class="price-info-sub" id="priceIsub3">/per month</div>
             </div>
             <div class="text-secondary price-last">
-              <div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
+              <div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra.</br> Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
               <button class="price-button" id="priceB3">ORDER NOW</button>
             </div>
           </div>
@@ -222,11 +222,11 @@
           <div class="price centered" id="price4">
             <div class="price-title" id="priceT4">ULTIMATE</div>
             <div class="price-info" id="priceI4">
-              <div class="price-info-title" id="priceImain4"><span style="font-size: 30px;vertical-align: super;">$</span>99</div>
+              <div class="price-info-title" id="priceImain4"><span style="font-size: 30px;vertical-align:18px;">$</span>99</div>
               <div class="price-info-sub" id="priceIsub4">/per month</div>
             </div>
             <div class="text-secondary price-last">
-              <div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
+              <div class="text-center" style="margin: 20px;">Fusce fermentum placerat magna ac pharetra.</br> Aliquam euismod elit non ipsum <span style="color: #008ed6;">lacinia</span> consectetur.</div>
               <button class="price-button" id="priceB4">ORDER NOW</button>
             </div>
           </div>
@@ -235,9 +235,9 @@
 
     <div class="contactbg"><div class="container">
       <div class="row"><div class="text-primaryy centered">STAY IN TOUCH</div></div>
-      <div class="row"><div class="centered black-text">Contact us</div></div>
-      <div class="row"><div class="centered double-dash-active" style="margin-top: 20px;"></div></div>
-      <div class="row">
+      <div class="row"><div class="centered black-text" style="margin-top: -10px;">Contact us</div></div>
+      <div class="row"><div class="centered double-dash-active" style="margin-top: 13px;"></div></div>
+      <div class="row" style="margin-top: -18px; margin-bottom: 66px;">
         <div class="col-xs-12 col-md-4">
           <div class="text-center element">
             <div class="element-without-circle"><img src="dist/images/ Phone.png" alt="Pictogram of phone"></div>
@@ -247,39 +247,39 @@
         <div class="col-xs-12 col-md-4">
           <div class="text-center element">
             <div class="element-without-circle"><img src="dist/images/ Pointer.png" alt="Pictogram of pointer"></div>
-            <div class="text-secondary" id="address">вул Кафедральна, 1A, Луцьк, Волинська область, 43000</div>
+            <div class="text-secondary" id="address">1001 Brickell Bay Dr.</br>Suite 1900</br>Miami, FL 33131</div>
           </div>
         </div>
         <div class="col-xs-12 col-md-4">
           <div class="text-center element">
             <div class="element-without-circle"><img src="dist/images/ Envelope.png" alt="Pictogram of envelope"></div>
-            <div class="text-secondary"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=suupport@ourname.com&su=Підтримка&body=Що вас турбує?">support@ourname.com</a></div>
+            <div class="text-secondary"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=suupport@yourname.com&su=Підтримка&body=Що вас турбує?">support@yourname.com</a></div>
           </div>
         </div>
       </div>
       <div class="row">
       <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12"><form class="pool-form" id="pool-form" onsubmit="poolFormCheck()"><div class="row mb-md-0 mb-4">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-sm-6 col-xs-12" id="pool-leftcolumn" style="padding-left: 21px; padding-right: 10px;">
             <input type="text" class="form-control pool-input" id="pool-name" placeholder="NAME *" required>
             <input type="email" class="form-control pool-input" id="pool-email" placeholder="EMAIL *" required>
             <input type="text" class="form-control pool-input" id="pool-subject" placeholder="SUBJECT *" required></div>
-            <div class="col-md-6 col-xs-12">
-            <textarea class="form-control pool-input" id="pool-message" placeholder="MESSAGE *" style="max-height: 190px; height: 100%; resize:none; padding: 15px;" required></textarea></div></div>
-            <div style="display:flex; justify-content: right; align-items: center;"><button type="submit" class="btn btn-primary home-button" id="pool-send" style="margin-right: 0 !important;">SEND MESSAGE</button>
+            <div class="col-sm-6 col-xs-12" style="padding-left: 0px;">
+            <textarea class="form-control pool-input" id="pool-message" placeholder="MESSAGE *" style="max-height: 190px; height: 100%; resize:none; padding: 15px; padding-left: 18px;" required></textarea></div></div>
+            <div style="display:flex; justify-content: right; align-items: center;"><button type="submit" class="btn btn-primary home-button" style="margin-right: 25px;" id="pool-send">SEND MESSAGE</button>
       </form></div>
     </div></div></div>
     <div id="map"></div>
 
     <div class="footerbg">
       <div class="container footerbg">
-        <div class="row" style="height:100%; padding-top: 40px; padding-bottom:40px;"><div class="centered footer-icons">
+        <div style="height:100%; padding-top: 48px; padding-bottom:40px;"><div class="centered footer-icons">
             <div class="footer-icon"><a href="https://www.behance.net/"><img src="dist/images/ behance.png" alt="Behance"></a></div>
             <div class="footer-icon"><a href="https://www.dribbble.com/"><img src="dist/images/ dribbble.png" alt="Dribbble"></a></div>
             <div class="footer-icon"><a href="https://www.twitter.com/"><img src="dist/images/ twitter.png" alt="Twitter"></a></div>
             <div class="footer-icon"><a href="https://www.facebook.com/"><img src="dist/images/ facebook.png" alt="Facebook"></a></div>
             <div class="footer-icon"><a href="https://www.linkedin.com/"><img src="dist/images/ linkedin.png" alt="LinkedIn"></a></div>
           </div>
-          <div class="footer-text centered">COPYRIGHT © 2014 LUCID ONEPAGE THEME</div>
+          <div class="footer-text centered" style="padding-top: 21px;">COPYRIGHT © 2014 LUCID ONEPAGE THEME</div>
         </div>
         </div>
       </div>

@@ -83,8 +83,8 @@ return response.data.results[0].geometry.location;
 }
 const coord = getCoordinates(); */
 function initMap() {
-   
-  const center = { lat: 50.73939207423505, lng: 25.32379303413327 }
+  
+  const center = { lat: 25.763955930182036, lng: -80.19016490234428 }
 
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
