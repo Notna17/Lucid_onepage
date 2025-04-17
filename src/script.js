@@ -14,12 +14,15 @@ window.addEventListener("resize", () => {
     isCollapse = false;
   }});
 //contact
-
+const contactCross = document.getElementById("contact-cross");
 const contact = document.getElementById("contact");
 const contactForm = document.getElementById("contact-form");
-if (contact && contactForm) {
+if (contact && contactForm && contactCross) {
     contact.addEventListener("click", () => {
       contactForm.classList.toggle("on");
+    });
+    contactCross.addEventListener("click", () => {
+      contactForm.classList.remove("on");
     });
   }
 
