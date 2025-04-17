@@ -1,6 +1,6 @@
 // Загальні стилі
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -26,7 +26,6 @@ a:hover {
   text-transform: uppercase;
   color: #008ed6;
   font-weight: 700;
-  font-family: "Source Sans Pro";
 }
 .text-secondary {
     font-size: 18px;
@@ -88,7 +87,6 @@ a:hover {
     font-size: 16px;
     color: #fffefe;
     font-weight: 600;
-    font-family: "Source Sans Pro";
     text-align: right;
     display: flex;
     align-items: center;
@@ -275,16 +273,28 @@ a:hover {
   height: 640px;
   padding-top: 45px;
 }
+.swiper-slide-active{
+  padding-left: 10px;
+}
 .quote {
   height: 100%;
   margin-top: 80px;
-  padding: 10px;
+  padding-top: 5px;
 }
 .quote-text {
+  padding-top: 3px;
+  padding-left: 4px;
   font-size: 24px;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   font-style: italic;
+  line-height: 32px;
+  max-width: 570px;
+}
+.quote-author {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
 }
 .quote-picture {
   height: 60px;
@@ -292,15 +302,15 @@ a:hover {
   border-radius: 50%;
 }
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border: 1px solid #fff;
   background: transparent;
   opacity: 0.5;
-  margin: 6px !important;
+  margin: 11px !important;
   border-radius: 50%;
   transition: all 0.3s ease;
-  margin-bottom: 9px !important;
+  margin-bottom: 10px !important;
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
